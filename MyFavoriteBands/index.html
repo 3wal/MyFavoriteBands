@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Favorite Bands</title>
+        <link rel="stylesheet" href="css/big.css" media="screen and (min-width: 981px)"><!--indicamos que la media se activa a partir de un minimo de pantalla de 981px-->
+        <link rel="stylesheet" href="css/medium.css" media="screen and (min-width: 481px) and (max-width: 980px)"><!--indicamos que la media se activa entre de un minimo de pantalla de 481px y un maximo de 980px-->
+        <link rel="stylesheet" href="css/mini.css" media="screen and (max-width: 480px)"><!--indicamos que la media se activa a partir de un maximo de pantalla de 480px-->
+        <!--aniadimos los elementos de acuerdo a la resolucion de la pantalla partiendo de la logica mobile first, es decir vamos construyendo nuestra pagina desde una sola columna hasta las que sean necesarias,
+        es decir de menor a mayor. Iniciariamos nuestras mediaqueries con min-width y en ellas vamos aniadiendo los estilos de los elementos como flotacion, width, colores, etc. y a medida que vayamos
+        subiendo de resolucion de pantalla iremos aniadiendo mediaqueries con los estilos correspondientes de acuerdo a las medidas de pantalla que vamos a trabajar. Con esto nos ahorramos lineas de codigo e incluimos
+        el disenio responsive desde el inicio de nuestro codigo.-->
+        <link rel="stylesheet" href="https://use.typekit.net/ghd1heg.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+      <div class="divnavbar">
+        <nav id="nav_bar">
+            <ul>
+              <li><a href="default.asp">Home</a></li>
+              <li><a href="news.asp">News</a></li>
+              <li><a href="contact.asp">Contact</a></li>
+              <li><a href="about.asp">About</a></li>
+            </ul>
+        </nav>
+      </div>
+        <!---header><h1>Edu Project</h1></header--->
+    <div class="banner"><h1>MY FAVORITE BANDS</h1></div>
+    <div class="container2">
+      <div class="mainImage"></div>
+    </div>
+    <br>
+    <section id="secOne">
+      <div class="container3">
+        <div class="box"><h1>BOX 1</h1><p class="boxText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque rhoncus diam. Mauris tincidunt urna id velit vestibulum maximus. In varius justo vitae sem pharetra, id pharetra justo fermentum.</p></div>
+        <div class="box"><h1>BOX 2</h1><p class="boxText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque rhoncus diam. Mauris tincidunt urna id velit vestibulum maximus. In varius justo vitae sem pharetra, id pharetra justo fermentum.</p></div>
+        <div class="box"><h1>BOX 3</h1><p class="boxText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque rhoncus diam. Mauris tincidunt urna id velit vestibulum maximus. In varius justo vitae sem pharetra, id pharetra justo fermentum.</p></div>
+        <div class="box"><h1>BOX 4</h1><p class="boxText">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pellentesque rhoncus diam. Mauris tincidunt urna id velit vestibulum maximus. In varius justo vitae sem pharetra, id pharetra justo fermentum.</p></div>
+      </div>
+    </section>
+    <br>
+
+    <section id="secTwo">
+      <!--h1>Interview with...</h1--->
+      <div id="secTwoPic"></div>
+
+    </section>
+    <br>
+
+    <section id="secThree">
+      <!--h1>Interview with...</h1--->
+      <div id="secThreePic"></div>
+
+    </section>
+    <br>
+
+    <section id="secFour">
+      <!--h1>Interview with...</h1--->
+      <div id="secFourPic"></div>
+
+    </section>
+    <br>
+
+    <div class="container4">
+      <div class="band_title">1 NOTING MORE</div>
+      <div class="band_title">2 THE NATIONAL</div>
+      <div class="band_title">3 MATING RITUAL</div>
+      <div class="band_title">4 TREMONTI</div>
+      <div class="band_title">5 ALTER BRIDGE</div>
+      <div class="band_title">6 WOLFMOTHER</div>
+      <div class="band_title">7 PINK FLOYD</div>
+      <div class="band_title">8 GNR</div>
+    </div>
+
+    <div class="listOfBands">
+      <p><a href="file:///C:/Users/eiglesias/Documents/Web/Projects/ADI2/nothing_more/nothing_more.html">Nothing More</a></p>
+      <p><a href="file:///C:/Users/eiglesias/Documents/Web/Projects/ADI2/the_national/the_national.html">The National</a></p>
+      <p>Mating Ritual</p>
+      <p>Dawes</p>
+    </div>
+        <div class="container">
+
+            <div id="demo">
+
+                <input type="text" name="keywordInput" id="keywordInput" placeholder="KEYWORD" onkeyup="showKeyword();" onchange="showKeyword();">
+                <br><br>
+                <button onclick="showGif();">SHOW ME THE MAGIC</button>
+                <section id="gif-banner">
+                </section>
+
+            </div>
+
+            <div class="image-banner">
+                <!---img class="image" onmouseover="helloKirk()" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Kirk_Hammett_2017.jpg/1200px-Kirk_Hammett_2017.jpg" alt=""--->
+            </div>
+        <div class="container"></div>
+
+            <!--<div id="demo"></div>
+            <div id="request1"></div>
+            <div id="request2"></div>
+            <button onclick="sendRequest();">ENVIAR REQUEST</button>
+            <button onclick="sendSms()";>SEND NUDES</button>
+            <input type="text" name="twitterAccount" id="twitterAccount" placeholder="username">
+            <button onclick="stalkTwitter();">STALKEA TWISTER</button>-->
+
+
+        </div>
+
+        <footer>
+
+        </footer>
+
+    </body>
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+    <!--<script src="SendSms.js"></script>-->
+    <script src="twitterStuff.js"></script>
+    <script src="ShowGif.js"></script>
+</html>
